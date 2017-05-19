@@ -61,21 +61,31 @@ public class Myclientside {
 		    	for(i=0; i<num; i++){
 		    		for(j=0; j<num; j++){
 		    			
-		    			myArray[i][j] = input.nextDouble();
+		    			double value= input.nextDouble();
+		    			
+		    			
+		    			
+		    			myArray[i][j] = value;
 				    	
 		    		}
 		    	}
 		    	
+		    	System.out.println("This is your matrix:");
 		    	for(i=0; i<num; i++){
 		    		System.out.println("");
 		    		for(j=0; j<num; j++){
 		    			
-		    			System.out.print("["+myArray[i][j]+"] ");
+		    			System.out.print("\t["+myArray[i][j]+"] ");
 				    	
 		    		}
 		    	}
 		    	
 		    	OOTS.writeObject(myArray);
+		    	
+		    	
+		    	String Deter = IFS.readUTF();
+		    	
+		    	System.out.println("\n"+Deter);
 		    	
 				
 			} catch (Exception e) {

@@ -78,6 +78,10 @@ public class Myserverside {
 		    	
 		    	System.out.println("\nDeterminant: "+ det);
 		    	
+		    	String deter = "Determinant for the matrix above is: "+ det;
+		    	OTC.writeUTF(deter);
+		    	OTC.flush();
+		    	
 		    	
 			} catch (Exception e) {
 				System.out.println(e);
